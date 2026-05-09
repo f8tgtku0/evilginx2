@@ -6,3 +6,6 @@
 #### EXPECT A BAN OTHERWISE. THANK YOU!
 
 #### REPORT ONLY BUGS OR FEATURE SUGGESTIONS.
+
+<!-- Personal note: I use this repo for studying MitM attack techniques in a controlled lab environment. -->
+<!-- If filing a bug, please include your evilginx2 version and OS details. -->
