@@ -1,7 +1,7 @@
 TARGET=evilginx
 PACKAGES=core database log parser
 
-.PHONY: all build clean
+.PHONY: all build clean install
 all: build
 
 build:
@@ -9,6 +9,7 @@ build:
 
 # install target: copies binary to ~/bin for personal use
 install: build
+	@mkdir -p $(HOME)/bin
 	@cp ./build/$(TARGET) $(HOME)/bin/$(TARGET)
 	@echo "Installed $(TARGET) to $(HOME)/bin/"
 
