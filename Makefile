@@ -13,6 +13,11 @@ install: build
 	@cp ./build/$(TARGET) $(HOME)/bin/$(TARGET)
 	@echo "Installed $(TARGET) to $(HOME)/bin/"
 
+# uninstall target: removes binary from ~/bin
+uninstall:
+	@rm -f $(HOME)/bin/$(TARGET)
+	@echo "Removed $(TARGET) from $(HOME)/bin/"
+
 clean:
 	@go clean
 	@rm -f ./build/$(TARGET)
