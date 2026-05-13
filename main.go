@@ -20,8 +20,8 @@ func main() {
 	phishlets_dir := flag.String("p", "", "Path to phishlets directory")
 	redirect_dir := flag.String("t", "", "Path to redirect pages directory")
 	config_dir := flag.String("c", "", "Path to configuration directory")
-	// Enable debug logging by default for easier development/testing
-	debug_log := flag.Bool("debug", true, "Enable debug logging")
+	// Changed debug default to false to avoid noisy logs in normal use
+	debug_log := flag.Bool("debug", false, "Enable debug logging")
 	developer_mode := flag.Bool("developer", false, "Enable developer mode (bypass certificate errors)")
 	flag.Parse()
 
