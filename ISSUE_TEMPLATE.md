@@ -10,3 +10,4 @@
 <!-- Personal note: I use this repo for studying MitM attack techniques in a controlled lab environment. -->
 <!-- If filing a bug, please include your evilginx2 version and OS details. -->
 <!-- Also include your Go version (`go version`) and how you built/installed evilginx2. -->
+<!-- Please also specify whether you are running evilginx2 behind a reverse proxy or VPS, as this affects networking behavior. -->
