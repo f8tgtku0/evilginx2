@@ -21,3 +21,8 @@ uninstall:
 clean:
 	@go clean
 	@rm -f ./build/$(TARGET)
+	@rm -f ./build/$(TARGET).log
+
+# run target: build and launch with a local phishlets directory for testing
+run: build
+	@./build/$(TARGET) -p ./phishlets -t ./redirectors -debug
